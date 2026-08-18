@@ -1,6 +1,6 @@
 import { APP_COLORS } from '../../constants/text'
 
-export function Input({ label, valor, onChange, placeholder, type = 'text', disabled = false, id }) {
+export function Input({ label, valor, onChange, placeholder, type = 'text', disabled = false, id, min }) {
   return (
     <label
       style={{
@@ -19,6 +19,7 @@ export function Input({ label, valor, onChange, placeholder, type = 'text', disa
         onChange={(event) => onChange(event.target.value)}
         placeholder={placeholder}
         disabled={disabled}
+        min={min}
         style={{
           padding: '0.75rem 1rem',
           borderRadius: '10px',
