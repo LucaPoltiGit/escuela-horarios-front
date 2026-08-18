@@ -47,6 +47,30 @@ export const APP_TEXT = {
       tipo: 'Tipo',
       turno: 'Turno',
     },
+    ayudaFilaClickeable: 'Hacé clic en una escuela para ver su detalle.',
+    secciones: {
+      bloques: 'Bloques horarios',
+      grados: 'Grados',
+      materias: 'Materias',
+      docentes: 'Docentes',
+      generarHorario: 'Generar horario',
+    },
+    detalle: {
+      volver: 'Volver a escuelas',
+      cargando: 'Cargando escuela…',
+      errorCargar: 'No se pudo obtener la escuela solicitada.',
+      noEncontrada: 'No encontramos esa escuela.',
+      seccionesTitle: 'Secciones de la escuela',
+      labels: {
+        tipo: 'Tipo de jornada',
+        turno: 'Turno',
+      },
+    },
+  },
+  enConstruccion: {
+    title: 'Sección en construcción',
+    description: 'Todavía estamos trabajando en esta sección. Volvé a intentarlo más adelante.',
+    volver: 'Volver a la escuela',
   },
 }
 
