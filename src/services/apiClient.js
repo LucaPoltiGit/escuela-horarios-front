@@ -32,7 +32,15 @@ export const apiClient = {
     })
 
     if (!response.ok) {
-      const errorMessage = `HTTP ${response.status}`
+      let errorMessage = `HTTP ${response.status}`
+      try {
+        const cuerpo = await response.json()
+        if (cuerpo?.detail) {
+          errorMessage = cuerpo.detail
+        }
+      } catch (error) {
+        // El cuerpo del error no era JSON: se usa el mensaje genérico.
+      }
       throw new Error(errorMessage)
     }
 
