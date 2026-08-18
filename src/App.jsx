@@ -5,6 +5,7 @@ import { ROUTES } from './constants/routes'
 import HealthPage from './pages/HealthPage'
 import EscuelasPage from './pages/EscuelasPage'
 import EscuelaDetallePage from './pages/EscuelaDetallePage'
+import BloquesPage from './pages/BloquesPage'
 import EnConstruccionPage from './pages/EnConstruccionPage'
 
 const SECCIONES = APP_TEXT.escuelas.secciones
@@ -17,10 +18,7 @@ function App() {
         <Route path={ROUTES.salud} element={<HealthPage />} />
         <Route path={ROUTES.escuelas} element={<EscuelasPage />} />
         <Route path={ROUTES.escuelaDetalle} element={<EscuelaDetallePage />} />
-        <Route
-          path={ROUTES.escuelaBloques}
-          element={<EnConstruccionPage nombreSeccion={SECCIONES.bloques} />}
-        />
+        <Route path={ROUTES.escuelaBloques} element={<BloquesPage />} />
         <Route
           path={ROUTES.escuelaGrados}
           element={<EnConstruccionPage nombreSeccion={SECCIONES.grados} />}
