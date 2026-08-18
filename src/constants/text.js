@@ -194,6 +194,65 @@ export const APP_TEXT = {
       exitoGuardarModulos: 'Módulos guardados correctamente.',
     },
   },
+  docentes: {
+    title: 'Docentes',
+    description: 'Cargá los docentes de la escuela y su disponibilidad horaria.',
+    volver: 'Volver a la escuela',
+    datos: {
+      title: 'Docentes',
+      faltanMaterias: 'Primero cargá las materias de la escuela: el docente necesita una materia asignada.',
+      irAMaterias: 'Ir a cargar materias',
+      vacio: 'Todavía no hay docentes cargados.',
+      editorTitle: 'Agregar docentes',
+      editorAyuda: 'Agregá una fila por cada docente nuevo.',
+    },
+    tabla: {
+      nombre: 'Nombre',
+      materia: 'Materia',
+      cargo: 'Cargo (módulos)',
+    },
+    labels: {
+      nombre: 'Nombre del docente',
+      materia: 'Materia que dicta',
+      cargo: 'Cargo (módulos semanales)',
+    },
+    placeholders: {
+      nombre: 'Ej: Juan Gómez',
+    },
+    selectPlaceholder: 'Seleccioná una materia',
+    disponibilidad: {
+      title: 'Disponibilidad',
+      ayuda:
+        'Tildá los módulos en los que el docente puede dar clase. El generador de horarios usa esta información, así que es importante que esté completa.',
+      faltanDocentes: 'Primero cargá los docentes de la escuela.',
+      faltanBloques: 'Esta escuela todavía no tiene bloques horarios cargados.',
+      irABloques: 'Ir a cargar bloques',
+      elegirDocente: 'Elegí un docente',
+      selectDocentePlaceholder: 'Seleccioná un docente',
+      columnaBloque: 'Módulo',
+      cargando: 'Cargando disponibilidad…',
+    },
+    buttons: {
+      agregarFila: 'Agregar docente',
+      quitarFila: 'Quitar',
+      guardarDocentes: 'Guardar docentes',
+      guardarDisponibilidad: 'Guardar disponibilidad',
+      guardando: 'Guardando…',
+    },
+    mensajes: {
+      cargando: 'Cargando docentes…',
+      errorCargar: 'No se pudo obtener la información de docentes de esta escuela.',
+      sinFilas: 'Agregá al menos un docente antes de guardar.',
+      camposIncompletos: 'Completá nombre, materia y cargo en todas las filas.',
+      cargoInvalido: 'El cargo no puede ser un número negativo.',
+      errorGuardarDocentes: 'No se pudo guardar los docentes. Revisá los datos e intentá de nuevo.',
+      exitoGuardarDocentes: 'Docentes guardados correctamente.',
+      errorCargarDisponibilidad: 'No se pudo obtener la disponibilidad de este docente.',
+      sinCambiosDisponibilidad: 'No hay disponibilidad nueva para guardar.',
+      errorGuardarDisponibilidad: 'No se pudo guardar la disponibilidad. Revisá los datos e intentá de nuevo.',
+      exitoGuardarDisponibilidad: 'Disponibilidad guardada correctamente.',
+    },
+  },
 }
 
 export const APP_COLORS = {
