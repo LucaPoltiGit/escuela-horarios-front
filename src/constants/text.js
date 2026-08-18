@@ -107,6 +107,49 @@ export const APP_TEXT = {
       exitoGuardar: 'Día guardado correctamente.',
     },
   },
+  grados: {
+    title: 'Grados',
+    description: 'Cargá los grados de esta escuela, con su maestra y cobertura de salida si corresponde.',
+    volver: 'Volver a la escuela',
+    ayudaCobertura:
+      'La cobertura de salida es el día en que la maestra de grado se retira antes y un docente especial cubre el último módulo.',
+    tabla: {
+      nombre: 'Nombre',
+      maestra: 'Maestra',
+      cobertura: 'Cobertura de salida',
+    },
+    sinCobertura: 'Sin cobertura',
+    editor: {
+      title: 'Cargar grados',
+      ayuda: 'Agregá una fila por cada grado de la escuela.',
+    },
+    labels: {
+      nombre: 'Nombre del grado',
+      maestra: 'Maestra',
+      necesitaCobertura: 'Necesita cobertura de salida',
+      diaCobertura: 'Día de cobertura',
+    },
+    placeholders: {
+      nombre: 'Ej: 1.º A',
+      maestra: 'Ej: Ana Pérez',
+    },
+    selectPlaceholder: 'Seleccioná un día',
+    buttons: {
+      agregarFila: 'Agregar grado',
+      quitarFila: 'Quitar',
+      guardarGrados: 'Guardar grados',
+      guardando: 'Guardando…',
+    },
+    mensajes: {
+      cargando: 'Cargando grados…',
+      errorListar: 'No se pudo obtener los grados de esta escuela.',
+      sinFilas: 'Agregá al menos un grado antes de guardar.',
+      nombreRequerido: 'Completá el nombre en todas las filas.',
+      diaCoberturaRequerido: 'Elegí un día de cobertura para los grados que la necesitan.',
+      errorGuardar: 'No se pudo guardar los grados. Revisá los datos e intentá de nuevo.',
+      exitoGuardar: 'Grados guardados correctamente.',
+    },
+  },
 }
 
 export const APP_COLORS = {
