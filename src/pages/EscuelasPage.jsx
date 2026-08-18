@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Button } from '../components/common/Button'
 import { Input } from '../components/common/Input'
 import { Select } from '../components/common/Select'
 import { Title } from '../components/common/Title'
 import { APP_COLORS, APP_TEXT } from '../constants/text'
 import { TIPOS_ESCUELA, TURNOS_ESCUELA } from '../constants/escuelasOptions'
+import { rutaDetalleEscuela } from '../constants/routes'
 import { escuelasService } from '../services/escuelasService'
 
 const ESCUELAS_TEXT = APP_TEXT.escuelas
@@ -12,6 +14,7 @@ const ESCUELAS_TEXT = APP_TEXT.escuelas
 const valoresIniciales = { nombre: '', tipo: '', turno: '' }
 
 function EscuelasPage() {
+  const navigate = useNavigate()
   const [escuelas, setEscuelas] = useState([])
   const [isLoading, setIsLoading] = useState(true)
   const [errorListar, setErrorListar] = useState('')
@@ -105,6 +108,9 @@ function EscuelasPage() {
 
           {!isLoading && !errorListar && escuelas.length > 0 && (
             <div style={{ overflowX: 'auto', marginTop: '1rem' }}>
+              <p style={{ color: APP_COLORS.textMuted, fontSize: '0.9rem', marginBottom: '0.75rem' }}>
+                {ESCUELAS_TEXT.ayudaFilaClickeable}
+              </p>
               <table style={{ width: '100%', borderCollapse: 'collapse' }}>
                 <thead>
                   <tr>
@@ -115,7 +121,18 @@ function EscuelasPage() {
                 </thead>
                 <tbody>
                   {escuelas.map((escuela) => (
-                    <tr key={escuela.id}>
+                    <tr
+                      key={escuela.id}
+                      role="link"
+                      tabIndex={0}
+                      onClick={() => navigate(rutaDetalleEscuela(escuela.id))}
+                      onKeyDown={(event) => {
+                        if (event.key === 'Enter' || event.key === ' ') {
+                          navigate(rutaDetalleEscuela(escuela.id))
+                        }
+                      }}
+                      style={filaClickeable}
+                    >
                       <td style={celda}>{escuela.nombre}</td>
                       <td style={celda}>{escuela.tipo}</td>
                       <td style={celda}>{escuela.turno}</td>
@@ -197,6 +214,10 @@ const celda = {
   padding: '0.75rem',
   borderBottom: `1px solid ${APP_COLORS.border}`,
   color: APP_COLORS.text,
+}
+
+const filaClickeable = {
+  cursor: 'pointer',
 }
 
 export default EscuelasPage
