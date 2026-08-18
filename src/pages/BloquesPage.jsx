@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { Button } from '../components/common/Button'
 import { Input } from '../components/common/Input'
@@ -33,7 +33,7 @@ function BloquesPage() {
   const [errorGuardar, setErrorGuardar] = useState('')
   const [exitoGuardar, setExitoGuardar] = useState('')
 
-  const fetchBloques = async () => {
+  const fetchBloques = useCallback(async () => {
     setIsLoading(true)
     setErrorListar('')
 
@@ -45,11 +45,11 @@ function BloquesPage() {
     } finally {
       setIsLoading(false)
     }
-  }
+  }, [id])
 
   useEffect(() => {
     fetchBloques()
-  }, [id])
+  }, [fetchBloques])
 
   const actualizarFila = (clave, campo) => (valor) => {
     setFilas((anteriores) => anteriores.map((fila) => (fila.clave === clave ? { ...fila, [campo]: valor } : fila)))
