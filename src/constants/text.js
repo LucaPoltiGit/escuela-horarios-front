@@ -150,6 +150,50 @@ export const APP_TEXT = {
       exitoGuardar: 'Grados guardados correctamente.',
     },
   },
+  materias: {
+    title: 'Materias',
+    description: 'Cargá el catálogo de materias y asigná cuántos módulos semanales tiene cada una por grado.',
+    volver: 'Volver a la escuela',
+    catalogo: {
+      title: 'Materias de la escuela',
+      vacio: 'Todavía no hay materias cargadas.',
+      editorTitle: 'Agregar materias',
+      editorAyuda: 'Agregá una fila por cada materia nueva.',
+    },
+    matriz: {
+      title: 'Módulos por grado',
+      ayuda: 'Ingresá los módulos semanales de cada materia en cada grado. Dejalo vacío si la materia no se dicta en ese grado.',
+      faltanMaterias: 'Primero cargá las materias de la escuela.',
+      faltanGrados: 'Esta escuela todavía no tiene grados cargados.',
+      irAGrados: 'Ir a cargar grados',
+      columnaGrado: 'Grado',
+    },
+    labels: {
+      nombreMateria: 'Nombre de la materia',
+    },
+    placeholders: {
+      nombreMateria: 'Ej: Música',
+    },
+    buttons: {
+      agregarFila: 'Agregar materia',
+      quitarFila: 'Quitar',
+      guardarMaterias: 'Guardar materias',
+      guardarModulos: 'Guardar módulos',
+      guardando: 'Guardando…',
+    },
+    mensajes: {
+      cargando: 'Cargando materias…',
+      errorCargar: 'No se pudo obtener la información de materias de esta escuela.',
+      sinFilas: 'Agregá al menos una materia antes de guardar.',
+      nombreRequerido: 'Completá el nombre en todas las filas.',
+      errorGuardarMaterias: 'No se pudo guardar las materias. Revisá los datos e intentá de nuevo.',
+      exitoGuardarMaterias: 'Materias guardadas correctamente.',
+      valorNegativo: 'Los módulos no pueden ser un número negativo.',
+      sinCambiosModulos: 'No hay módulos nuevos para guardar.',
+      errorGuardarModulos: 'No se pudo guardar los módulos. Revisá los datos e intentá de nuevo.',
+      exitoGuardarModulos: 'Módulos guardados correctamente.',
+    },
+  },
 }
 
 export const APP_COLORS = {
