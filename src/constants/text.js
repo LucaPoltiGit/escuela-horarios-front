@@ -67,11 +67,6 @@ export const APP_TEXT = {
       },
     },
   },
-  enConstruccion: {
-    title: 'Sección en construcción',
-    description: 'Todavía estamos trabajando en esta sección. Volvé a intentarlo más adelante.',
-    volver: 'Volver a la escuela',
-  },
   bloques: {
     title: 'Bloques horarios',
     description: 'La grilla del día se repite igual toda la semana. Cargala una sola vez.',
