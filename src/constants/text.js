@@ -72,6 +72,41 @@ export const APP_TEXT = {
     description: 'Todavía estamos trabajando en esta sección. Volvé a intentarlo más adelante.',
     volver: 'Volver a la escuela',
   },
+  bloques: {
+    title: 'Bloques horarios',
+    description: 'La grilla del día se repite igual toda la semana. Cargala una sola vez.',
+    volver: 'Volver a la escuela',
+    tabla: {
+      orden: 'Orden',
+      horaInicio: 'Hora inicio',
+      horaFin: 'Hora fin',
+      tipo: 'Tipo',
+    },
+    editor: {
+      title: 'Cargar el día',
+      ayuda: 'Agregá una fila por cada bloque del día, en el orden en que ocurren.',
+    },
+    labels: {
+      horaInicio: 'Hora inicio',
+      horaFin: 'Hora fin',
+      tipo: 'Tipo de bloque',
+    },
+    selectPlaceholder: 'Seleccioná un tipo',
+    buttons: {
+      agregarFila: 'Agregar bloque',
+      quitarFila: 'Quitar',
+      guardarDia: 'Guardar día',
+      guardando: 'Guardando…',
+    },
+    mensajes: {
+      cargando: 'Cargando bloques…',
+      errorListar: 'No se pudo obtener los bloques de esta escuela.',
+      sinFilas: 'Agregá al menos un bloque antes de guardar.',
+      camposIncompletos: 'Completá hora inicio, hora fin y tipo en todas las filas.',
+      errorGuardar: 'No se pudo guardar el día. Revisá los datos e intentá de nuevo.',
+      exitoGuardar: 'Día guardado correctamente.',
+    },
+  },
 }
 
 export const APP_COLORS = {
