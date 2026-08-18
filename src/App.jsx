@@ -8,6 +8,7 @@ import EscuelaDetallePage from './pages/EscuelaDetallePage'
 import BloquesPage from './pages/BloquesPage'
 import GradosPage from './pages/GradosPage'
 import MateriasPage from './pages/MateriasPage'
+import DocentesPage from './pages/DocentesPage'
 import EnConstruccionPage from './pages/EnConstruccionPage'
 
 const SECCIONES = APP_TEXT.escuelas.secciones
@@ -23,10 +24,7 @@ function App() {
         <Route path={ROUTES.escuelaBloques} element={<BloquesPage />} />
         <Route path={ROUTES.escuelaGrados} element={<GradosPage />} />
         <Route path={ROUTES.escuelaMaterias} element={<MateriasPage />} />
-        <Route
-          path={ROUTES.escuelaDocentes}
-          element={<EnConstruccionPage nombreSeccion={SECCIONES.docentes} />}
-        />
+        <Route path={ROUTES.escuelaDocentes} element={<DocentesPage />} />
         <Route
           path={ROUTES.escuelaGenerarHorario}
           element={<EnConstruccionPage nombreSeccion={SECCIONES.generarHorario} />}
