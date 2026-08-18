@@ -12,9 +12,9 @@ import { formatearHoraCorta } from '../utils/horario'
 
 const BLOQUES_TEXT = APP_TEXT.bloques
 
-const crearFilaVacia = () => ({
+const crearFilaVacia = (horaInicio = '') => ({
   clave: crypto.randomUUID(),
-  horaInicio: '',
+  horaInicio,
   horaFin: '',
   tipoBloque: '',
 })
@@ -56,7 +56,10 @@ function BloquesPage() {
   }
 
   const agregarFila = () => {
-    setFilas((anteriores) => [...anteriores, crearFilaVacia()])
+    setFilas((anteriores) => {
+      const ultima = anteriores[anteriores.length - 1]
+      return [...anteriores, crearFilaVacia(ultima?.horaFin ?? '')]
+    })
   }
 
   const quitarFila = (clave) => {
