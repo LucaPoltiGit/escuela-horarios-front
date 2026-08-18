@@ -21,4 +21,21 @@ export const apiClient = {
 
     return response.json()
   },
+
+  async post(path, body) {
+    const response = await fetch(buildUrl(path), {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(body),
+    })
+
+    if (!response.ok) {
+      const errorMessage = `HTTP ${response.status}`
+      throw new Error(errorMessage)
+    }
+
+    return response.json()
+  },
 }
