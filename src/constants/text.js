@@ -253,6 +253,32 @@ export const APP_TEXT = {
       exitoGuardarDisponibilidad: 'Disponibilidad guardada correctamente.',
     },
   },
+  generar: {
+    title: 'Generar horario',
+    description: 'Generá el horario a partir de los datos cargados: bloques, grados, materias y docentes.',
+    volver: 'Volver a la escuela',
+    estadoInicial: 'Todavía no se generó un horario para esta escuela.',
+    confirmarRegenerar: 'Esto reemplazará el horario actual. ¿Querés continuar?',
+    resultado: {
+      title: 'Horario generado',
+      columnaBloque: 'Módulo',
+      celdaVacia: '—',
+      pdfGrado: 'Descargar PDF',
+      pdfDocentesTitle: 'Horarios por docente',
+      pdfDocente: 'Descargar PDF',
+    },
+    buttons: {
+      generar: 'Generar horario',
+      regenerar: 'Regenerar horario',
+      generando: 'Generando…',
+    },
+    mensajes: {
+      cargando: 'Cargando información de la escuela…',
+      errorCargar: 'No se pudo obtener la información de esta escuela.',
+      errorGenerar: 'No se pudo generar el horario. Revisá los datos cargados e intentá de nuevo.',
+      exitoGenerar: 'Horario generado correctamente.',
+    },
+  },
 }
 
 export const APP_COLORS = {
