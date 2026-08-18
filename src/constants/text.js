@@ -12,6 +12,42 @@ export const APP_TEXT = {
   buttons: {
     retry: 'Reintentar',
   },
+  nav: {
+    salud: 'Estado del sistema',
+    escuelas: 'Escuelas',
+  },
+  escuelas: {
+    title: 'Gestión de escuelas',
+    description: 'Consultá las escuelas cargadas y agregá nuevas.',
+    listTitle: 'Escuelas cargadas',
+    formTitle: 'Nueva escuela',
+    labels: {
+      nombre: 'Nombre de la escuela',
+      tipo: 'Tipo de jornada',
+      turno: 'Turno',
+    },
+    placeholders: {
+      nombre: 'Ej: Escuela N.º 5',
+    },
+    selectPlaceholder: 'Seleccioná una opción',
+    buttons: {
+      crear: 'Crear escuela',
+      creando: 'Creando…',
+    },
+    mensajes: {
+      cargando: 'Cargando escuelas…',
+      vacio: 'Todavía no hay escuelas cargadas.',
+      errorListar: 'No se pudo obtener la lista de escuelas. Intentá nuevamente.',
+      errorCrear: 'No se pudo crear la escuela. Revisá los datos e intentá de nuevo.',
+      exitoCrear: 'Escuela creada correctamente.',
+      camposRequeridos: 'Completá todos los campos antes de crear la escuela.',
+    },
+    tabla: {
+      nombre: 'Nombre',
+      tipo: 'Tipo',
+      turno: 'Turno',
+    },
+  },
 }
 
 export const APP_COLORS = {
